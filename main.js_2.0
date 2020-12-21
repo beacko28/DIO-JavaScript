@@ -1,0 +1,118 @@
+//PARTE 1 - Introdução ao JS
+//var nome = "Rafael Galleani";
+//var idade = 29;
+//var idade2 = 10;
+//var frase = "Japão é o melhor time do mundo";
+//alert(nome + "tem" + idade + "anos" );
+//alert(idade + idade2);
+//console.log(nome);
+//console.log(idade + idade2);
+//console.log(frase.toUpperCase("Japão" , "Brasil"));
+//alert(frase.replace("Japão" , "Brasil"));
+
+//PARTE 2 - Array e Dicionário
+//var lista = ["maça, pêra, banana, manga, abacaxi"];
+//console.log(lista.join(" - ")); // Invés de virgula, transforma em string, e coloca o que vocÊ quiser (espaç e - no exemplo)
+//console.log(lista.toString()); // Transforma em String
+//console.log(lista.reverse()); // Traz a ordem dos elementos revertida
+//console.log(lista.length); // exibe a quantidade de elementos do array
+//lista.push("uva"); //push adiciona o elemento no array
+//lista.pop() //pop retira o elemento
+//console.log(lista[1]); // array sempre começa no 0
+//alert(lista[1]);
+//var fruta = (nome = "maça" , cor = "vermelha" ) // dicionário
+
+//PARTE 3 - Condicionais, Laços de Repetição e Date
+//var idade = prompt ("Qual a sua idade?");
+//var idade = 18;
+//if (idade >= 18) {
+//    alert("Maior de Idade");
+//} else {
+//    alert("Menor de Idade");
+//}
+
+/*var count = 0;
+while (count <= 5){
+    console.log(count);
+    alert(count);
+    count = count + 1; // count +1 ou count ++ é a mesma coisa
+}
+*/
+
+/*
+var count;
+for (count 0; count <* 5, count ++){
+    alert(count);
+}
+*/
+
+//var d = new Date(); //apresentar data + horario
+//alert(d); 
+//alert(d.getMonth()+1); // apresenta a data
+            // como o month começa do zero, o +1 intercede para o mês atual
+//alert(d.getMinutes()); // Apresenta os minutos
+
+
+//PARTE 5
+/* function soma(n1, n2){
+    return n1 + n2;;
+}
+
+var validar = 0; // global
+function validaIdade(idade){
+    validar; //local
+    if(idade >= 18){
+        validar = true;
+    } else {
+        validar = false
+    }
+    return validar; // podia ser apenas return true e false  
+}
+
+var idade = prompt("Qual a sua idade?");
+console.log(validaIdade(idade));
+
+/*function setReplace(frase, nome, novo_nome){
+    frase.replace(nome, novo_nome)
+}
+alert(soma(5, 10)); 
+alert(setReplace("Vai Japão", "Japão", "Brasil");
+*/
+
+
+// PARTE 6
+
+
+function clicou(){
+    document.getElementById("Agradecimento").innerHTML = "Obrigado por clicar"; // traz o elemento
+}
+
+    function redirecionar(){
+        window.open("https://www.youtube.com.br"); //na outra aba será aberto
+        window.location.href = "https://www.youtube.com.br"; // na mesma aba será aberto
+    }
+
+    function trocar(elemento){ // exibe a mensagem em contato com o mouse
+        //document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+        elemento.innerHTML = "Obrigado por passar o mouse";
+        //alert("trocar texto");
+    }
+
+    function voltar(elemento){ // ao retirar o mouse exibirá a mensagem original
+        //document.getElementById("mousemove").innerHTML = "Passe o mouse aqui"; //passará a mensagem no apenas selecionado
+        elemento.innerHTML = "Passe o mouse aqui"; // passará para qualqueis elementos selecionados
+    }
+
+    function load(){
+        alert("Página Carregada");  //Apresenta mensagem no carregamento inicial da page / no carregamento do body
+    }
+
+    function funcaoChange(elemento){ //quando em um select, você pode coletar o valor escolhido pelo usuário
+        console.log(elemento.value);
+    }
+
+    
+
+
+  //  console.log(document.getElementById("Agradecimento")); 
+//    alert("Obrigado por clicar");
